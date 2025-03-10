@@ -23,7 +23,7 @@ use_digits = st.checkbox("Include Digits")
 use_special = st.checkbox("Use Special Characters")
 
 if st.button("Generate Password"):
-    password = generate_password_meter(length ,use_digits  ,use_special)
+    password = generate_password_meter(use_digits  ,use_special)
     st.write(f"Generated Password: `{password}`")
 
     st.write("---------------------")
